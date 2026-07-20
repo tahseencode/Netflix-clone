@@ -6,64 +6,97 @@
     <meta name="viewport" content="width=], initial-scale=1.0">
     <title>Netflix</title>
     <style>
-  * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-}
+        @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap');
 
-body {
-    background-color: black;
-}
+        * {
+            padding: 0;
+            margin: 0;
 
-.main {
-    background-image: url("assets/background.jpg");
-    background-position: center center;
-    background-size: max(1200px, 100vw);
-    background-repeat: no-repeat;
-    height: 644px;
-    position: relative;
-}
+        }
 
-.main .box {
-    height: 644px;
-    width: 100%;
-    opacity: 0.69;
-    position: absolute;
-    top: 0;
-    background-color: black;
-}
+        body {
+            background-color: black;
+        }
 
-nav {
-    max-width: 60vw;
-    justify-content: space-between;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    height: 100px;
-}
+        .main {
+            background-image: url("assets/background.jpg");
+            background-position: center center;
+            background-size: max(1200px, 100vw);
+            background-repeat: no-repeat;
+            height: 644px;
+            position: relative;
+        }
 
-nav img {
-    color: red;
-    width: 130px;
-    position: relative;
-    z-index: 10;
-}
+        .main .box {
+            height: 644px;
+            width: 100%;
+            opacity: 0.69;
+            position: absolute;
+            top: 0;
+            background-color: black;
+        }
 
-nav button {
-    position: relative;
-    z-index: 10;
-}
-.hero{
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-   display: flex;
-   flex-direction: column;
-   color: white;
-   z-index: 100;
-   position: relative;
-}
+        nav {
+
+            max-width: 60vw;
+            justify-content: space-between;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            height: 100px;
+        }
+
+        nav img {
+            color: red;
+            width: 130px;
+            position: relative;
+            z-index: 10;
+        }
+
+        nav button {
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero {
+            font-family: 'Martel Sans', sans-serif;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            z-index: 100;
+            position: relative;
+
+        }
+
+        .hero> :first-child {
+
+            font-weight: 700;
+            font-size: 56px;
+            text-align: center;
+        }
+
+        .hero :nth-child(2) {
+
+            font-weight: 700;
+            font-size: 56px;
+            text-align: center;
+
+        }
+
+        .hero :nth-child(3) {
+            text-align: centre;
+            font-weight: 500;
+            font-size: 20px;
+
+        }
+        .seperation{
+        
+  width: 7px;
+  color: gray;
+   }
     </style>
 </head>
 
@@ -73,7 +106,7 @@ nav button {
 
 
     <div class="main">
-        <nav><Span><img width="53" src="assets/logo.svg" ></Span>
+        <nav><Span><img width="53" src="assets/logo.svg"></Span>
             <div>
                 <button>
                     English
@@ -86,14 +119,20 @@ nav button {
         <div class="box"></div>
         <div class="hero">
 
-            <span>Unlimited movies, TV</span> 
+            <span>Unlimited movies, TV</span>
             <span>shows, and more</span>
             <span>Starts at ₹149. Cancel anytime.</span>
-
+            <div>
+                <button>
+                    Finish Sign-Up >
+                </button>
+            </div>
         </div>
 
+<div class="seperation">
 
-        
+</div>
+
     </div>
 </body>
 
