@@ -6,113 +6,150 @@
     <meta name="viewport" content="width=], initial-scale=1.0">
     <title>Netflix</title>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .main {
+            background-image: url("assets/background.jpg");
+            background-position: center center;
+            background-size: max(1200px, 100vw);
+            background-repeat: no-repeat;
+            height: 644px;
+            position: relative;
+        }
+
+        .main .box {
+            height: 644px;
+            width: 100%;
+            opacity: 0.69;
+            position: absolute;
+            top: 0;
+            background-color: black;
+        }
+
+        nav {
+            max-width: 60vw;
+            justify-content: space-between;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            height: 100px;
+        }
+
+        nav img {
+            color: red;
+            width: 130px;
+            position: relative;
+            z-index: 10;
+        }
+
+        nav button {
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero {
+            font-family: 'Martel Sans', sans-serif;
+            height: calc(100% - 100px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            position: relative;
+            gap: 23px;
+            padding: 0 30px;
+        }
+
+        .hero> :nth-child(1) {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bolder;
+            font-size: 48px;
+            text-align: center;
+        }
+
+        .hero> :nth-child(2) {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bolder;
+            font-size: 48px;
+            text-align: center;
+        }
+        
+
+        .hero> :nth-child(3) {
+            font-weight: 400;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .hero> :nth-child(4) {
+            font-weight: 400;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .separation {
+            height: 7px;
+            background-color: rgb(46, 44, 44);
+            position: relative;
+            z-index: 100;
+        }
+
+        .btn {
+            padding: 3px 8px;
+            font-weight: 400;
+            color: white;
+            background-color: rgba(248, 243, 243, 0.021);
+            border-radius: 4px;
+            border: 1px solid white;
+            cursor: pointer;
+
+        }
+
+        .btn-red {
+            font-weight: 600;
+            background-color: red;
+            padding: 3px 24px;
+            font-size: 20px;
+            border-radius: 4px;
+        }
+
+        .btn-red-sm {
+            background-color: red;
+        }
+
+        .em {
+            padding: 11px 74px 7px 29px;
+            font-size: 12px;
+            border-radius: 4px;
+            color: white;
+            border: 1px solid rgba(246, 238, 238, 0.5);
+        }
+        .section { color: white;
+        
+        
+            z-index: 10px;
+        }
+
+.trending{
+
+font-size: 40px;
+font-weight: bold;
+
 }
-
-body {
-    background-color: black;
-}
-
-.main {
-    background-image: url("assets/background.jpg");
-    background-position: center center;
-    background-size: max(1200px, 100vw);
-    background-repeat: no-repeat;
-    height: 644px;
-    position: relative;
-}
-
-.main .box {
-    height: 644px;
-    width: 100%;
-    opacity: 0.69;
-    position: absolute;
-    top: 0;
-    background-color: black;
-}
-
-nav {
-    max-width: 60vw;
-    justify-content: space-between;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    height: 100px;
-}
-
-nav img {
-    color: red;
-    width: 130px;
-    position: relative;
-    z-index: 10;
-}
-
-nav button {
-    position: relative;
-    z-index: 10;
-}
-
-.hero {
-    font-family: 'Martel Sans', sans-serif;
-    height: calc(100% - 100px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    position: relative;
-    gap: 23px;
-    padding: 0 30px;
-}
-
-.hero> :nth-child(1) {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bolder;
-    font-size: 48px;
-    text-align: center;
-}
-
-.hero> :nth-child(2) {
-      font-family: 'Poppins', sans-serif;
-    font-weight: bolder;
-    font-size: 48px;
-    text-align: center;
-}
-}
-
-.hero> :nth-child(3) {
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-}
-
-.separation {
-    height: 7px;
-    background-color: rgb(46, 44, 44);
-    position: relative;
-    z-index: 20;
-}
-
-.btn {
-    padding: 3px 8px;
-    font-weight: 400;
-    color: white;
-    background-color: rgba(248, 243, 243, 0.021);
-    border-radius: 4px;
-    border: 1px solid white;
-    cursor: pointer;
-
-}
-
     </style>
 </head>
 
-<body> 
+<body>
 
 
 
@@ -120,10 +157,10 @@ nav button {
     <div class="main">
         <nav><Span><img width="53" src="assets/logo.svg"></Span>
             <div>
-                <button>
+                <button class="btn">
                     English
                 </button>
-                <button>
+                <button class="btn-red-sm">
                     Sign in
                 </button>
             </div>
@@ -134,17 +171,24 @@ nav button {
             <span>Unlimited movies, TV</span>
             <span>shows, and more</span>
             <span>Starts at ₹149. Cancel anytime.</span>
+            <span>Ready to watch? Enter your email to create or restart your membership.</span>
             <div>
-                <button class="redbutton">
-                    Finish Sign-Up >
+                <input type="text" placeholder="Email Address" class="btn em">
+                <button class="btn btn-red">
+                    Get Started >
                 </button>
             </div>
         </div>
 
-<div class="seperation">
+        <div class="separation">
 
+        </div>
+<div class="section" >
+<div class="trending">
+    Trending now
 </div>
 
+</div>
     </div>
 </body>
 
