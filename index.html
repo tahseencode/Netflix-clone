@@ -3,19 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=], initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;600;700&display=swap');
 
         * {
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
         }
 
         body {
             background-color: black;
+            color: white;
+            overflow-x: hidden;
         }
 
         .main {
@@ -37,7 +40,7 @@
         }
 
         nav {
-            max-width: 60vw;
+            max-width: 75vw;
             justify-content: space-between;
             margin: auto;
             display: flex;
@@ -46,7 +49,6 @@
         }
 
         nav img {
-            color: red;
             width: 130px;
             position: relative;
             z-index: 10;
@@ -66,34 +68,23 @@
             flex-direction: column;
             color: white;
             position: relative;
-            gap: 23px;
+            z-index: 10;
+            gap: 16px;
             padding: 0 30px;
         }
 
-        .hero> :nth-child(1) {
+        .hero > :nth-child(1),
+        .hero > :nth-child(2) {
             font-family: 'Poppins', sans-serif;
-            font-weight: bolder;
-            font-size: 48px;
+            font-weight: 700;
+            font-size: 40px;
             text-align: center;
         }
 
-        .hero> :nth-child(2) {
-            font-family: 'Poppins', sans-serif;
-            font-weight: bolder;
-            font-size: 48px;
-            text-align: center;
-        }
-        
-
-        .hero> :nth-child(3) {
+        .hero > :nth-child(3),
+        .hero > :nth-child(4) {
             font-weight: 400;
-            font-size: 20px;
-            text-align: center;
-        }
-
-        .hero> :nth-child(4) {
-            font-weight: 400;
-            font-size: 20px;
+            font-size: 18px;
             text-align: center;
         }
 
@@ -101,111 +92,155 @@
             height: 7px;
             background-color: rgb(46, 44, 44);
             position: relative;
-            z-index: 100;
+            z-index: 10;
         }
 
         .btn {
-            padding: 3px 8px;
+            padding: 6px 16px;
             font-weight: 400;
             color: white;
             background-color: rgba(248, 243, 243, 0.021);
             border-radius: 4px;
             border: 1px solid white;
             cursor: pointer;
-
         }
 
         .btn-red {
             font-weight: 600;
             background-color: red;
-            padding: 3px 24px;
-            font-size: 20px;
+            padding: 10px 24px;
+            font-size: 18px;
             border-radius: 4px;
+            border: none;
         }
 
         .btn-red-sm {
             background-color: red;
+            color: white;
+            padding: 6px 16px;
+            border-radius: 4px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
         }
 
         .em {
-            padding: 11px 74px 7px 29px;
-            font-size: 12px;
+            padding: 12px 20px;
+            font-size: 16px;
             border-radius: 4px;
             color: white;
             border: 1px solid rgba(246, 238, 238, 0.5);
+            background: rgba(0, 0, 0, 0.6);
+            width: 300px;
         }
-        .section { color: white;
-        
-        
-            z-index: 10px;
+
+        .container {
+            max-width: 80vw;
+            margin: 40px auto 100px auto;
         }
-.container {
 
+        .section-title {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
 
-background-color: purple;
-max-width: 700px;
-height:500px;
-width: 100%;
-margin-top: 30px;
-margin-right: 12vw;
-margin-left: 12vw;
-margin-bottom: 100px;
-}
-.section-title{
-color: white;
-font-size: 20px;
-font-weight: bold;
-margin-bottom: 25px;
+        .slider {
+            display: flex;
+            gap: 30px;
+            overflow-x: auto;
+            padding-bottom: 20px;
+        }
 
-}
+       .slider::-webkit-scrollbar{
+        display: none;
+       }
     </style>
 </head>
 
 <body>
 
-
-
-
     <div class="main">
-        <nav><Span><img width="53" src="assets/logo.svg"></Span>
+        <nav>
+            <span><img src="assets/logo.svg" alt="Netflix Logo"></span>
             <div>
-                <button class="btn">
-                    English
-                </button>
-                <button class="btn-red-sm">
-                    Sign in
-                </button>
+                <button class="btn">English</button>
+                <button class="btn-red-sm">Sign in</button>
             </div>
         </nav>
         <div class="box"></div>
         <div class="hero">
-
             <span>Unlimited movies, TV</span>
             <span>shows, and more</span>
             <span>Starts at ₹149. Cancel anytime.</span>
             <span>Ready to watch? Enter your email to create or restart your membership.</span>
             <div>
-                <input type="text" placeholder="Email Address" class="btn em">
-                <button class="btn btn-red">
-                    Get Started >
-                </button>
+                <input type="text" placeholder="Email Address" class="em">
+                <button class="btn-red">Get Started &gt;</button>
             </div>
         </div>
+    </div>
 
-        <div class="separation">
+    <div class="separation"></div>
+
+    <div class="container">
+        <div class="section-title">Trending Now</div>
+        <div class="slider">
+            
+            <div class="card">
+                <img src="assets/img1.webp" alt="Movie 1">
+                <div class="number">1</div>
+            </div>
+
+            <div class="card">
+                <img src="assets/img2.webp" alt="Movie 2">
+                <div class="number">2</div>
+            </div>
+
+            <div class="card">
+                <img src="assets/img3.webp" alt="Movie 3">
+                <div class="number">3</div>
+            </div>
+
+            <div class="card">
+                <img src="assets/img4.webp" alt="Movie 4">
+                <div class="number">4</div>
+            </div>
+
+            <div class="card">
+                <img src="assets/img5.webp" alt="Movie 5">
+                <div class="number">5</div>
+            </div>
+
+            <div class="card">
+                <img src="assets/img6.webp" alt="Movie 6">
+                <div class="number">6</div>
+            </div>
+
+            <div class="card">
+                <img src="assets/img7.webp" alt="Movie 7">
+                <div class="number">7</div>
+            </div>
+
+            <div class="card">
+                <img src="assets/img8.webp" alt="Movie 8">
+                <div class="number">8</div>
+            </div>
+
+            <div class="card">
+                <img src="assets/img9.webp" alt="Movie 9">
+                <div class="number">9</div>
+            </div>
+
+            <div class="card">
+                <img src="assets/img10.webp" alt="Movie 10">
+                <div class="number">10</div>
+            </div>
 
         </div>
-<div class="container" >
-<div class="section-title">
-    Trending now
-</div>
-<div class="slider">
-
-
-
-</div>
-</div>
     </div>
+
 </body>
 
 </html>
