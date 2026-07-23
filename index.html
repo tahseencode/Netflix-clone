@@ -163,7 +163,7 @@
         .card {
 
 
-position: relative;
+            position: relative;
 
             width: 196px;
             flex: 0 0 auto;
@@ -172,9 +172,9 @@ position: relative;
             border-radius: 8px;
             overflow: visible;
             padding: 15px 10px;
+            transition: transform 0.3s ease, box-shadow ease;
+        }
 
-        }
-        }
 
         .card img {
 
@@ -196,32 +196,49 @@ position: relative;
             color: black;
             -webkit-text-stroke: 2px white;
         }
+
+        .card:hover {
+            transform: scale(1.1);
+            z-index: 10;
+            box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2);
+
+
+
+
+
+
+        }
+
+        .section {
+            display: flex;
+            gap: 10px;
+        }
     </style>
 </head>
 
 <body>
-
-    <div class="main">
-        <nav>
-            <span><img src="assets/logo.svg" alt="Netflix Logo"></span>
-            <div>
-                <button class="btn">English</button>
-                <button class="btn-red-sm">Sign in</button>
-            </div>
-        </nav>
-        <div class="box"></div>
-        <div class="hero">
-            <span>Unlimited movies, TV</span>
-            <span>shows, and more</span>
-            <span>Starts at ₹149. Cancel anytime.</span>
-            <span>Ready to watch? Enter your email to create or restart your membership.</span>
-            <div>
-                <input type="text" placeholder="Email Address" class="em">
-                <button class="btn-red">Get Started &gt;</button>
+    <header>
+        <div class="main">
+            <nav>
+                <span><img src="assets/logo.svg" alt="Netflix Logo"></span>
+                <div>
+                    <button class="btn">English</button>
+                    <button class="btn-red-sm">Sign in</button>
+                </div>
+            </nav>
+            <div class="box"></div>
+            <div class="hero">
+                <span>Unlimited movies, TV</span>
+                <span>shows, and more</span>
+                <span>Starts at ₹149. Cancel anytime.</span>
+                <span>Ready to watch? Enter your email to create or restart your membership.</span>
+                <div>
+                    <input type="text" placeholder="Email Address" class="em">
+                    <button class="btn-red">Get Started &gt;</button>
+                </div>
             </div>
         </div>
-    </div>
-
+    </header>
     <div class="separation"></div>
 
     <div class="container">
@@ -278,6 +295,29 @@ position: relative;
                 <div class="number">10</div>
             </div>
 
+        </div>
+    </div>
+    <div class="container">
+        <div class="container">
+            <div class="section-title">More reasons to join</div>
+        </div>
+        <div class="section">
+            <div class="purplecards">
+                <h3>Enjoy on your TV</h3>
+                Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+            </div>
+            <div class="purplecards">
+                <h3>Download your shows to watch offline</h3>
+                Save your favourites easily and always have something to watch.
+            </div>
+            <div class="purplecards">
+                <h3>Watch everywhere</h3>
+                Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+            </div>
+            <div class="purplecards">
+                <h3>Create profiles for kids</h3>
+                Send kids on adventures with their favourite characters in a space made just for them — free with your membership.
+            </div>
         </div>
     </div>
 
