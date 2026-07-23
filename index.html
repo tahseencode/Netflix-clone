@@ -73,16 +73,16 @@
             padding: 0 30px;
         }
 
-        .hero > :nth-child(1),
-        .hero > :nth-child(2) {
+        .hero> :nth-child(1),
+        .hero> :nth-child(2) {
             font-family: 'Poppins', sans-serif;
             font-weight: 700;
             font-size: 40px;
             text-align: center;
         }
 
-        .hero > :nth-child(3),
-        .hero > :nth-child(4) {
+        .hero> :nth-child(3),
+        .hero> :nth-child(4) {
             font-weight: 400;
             font-size: 18px;
             text-align: center;
@@ -151,11 +151,51 @@
             gap: 30px;
             overflow-x: auto;
             padding-bottom: 20px;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+            ;
         }
 
-       .slider::-webkit-scrollbar{
-        display: none;
-       }
+        .slider::-webkit-scrollbar {
+            display: none;
+        }
+
+        .card {
+
+
+position: relative;
+
+            width: 196px;
+            flex: 0 0 auto;
+            height: 312px;
+            scroll-snap-align: start;
+            border-radius: 8px;
+            overflow: visible;
+            padding: 15px 10px;
+
+        }
+        }
+
+        .card img {
+
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 8px;
+
+        }
+
+        .number {
+            font-size: 90px;
+            position: absolute;
+            font-weight: bold;
+
+            bottom: 15px;
+            left: -5px;
+            color: black;
+            -webkit-text-stroke: 2px white;
+        }
     </style>
 </head>
 
@@ -187,7 +227,7 @@
     <div class="container">
         <div class="section-title">Trending Now</div>
         <div class="slider">
-            
+
             <div class="card">
                 <img src="assets/img1.webp" alt="Movie 1">
                 <div class="number">1</div>
