@@ -493,3 +493,24 @@ nav > div {
         height: 200px;
     }
 }
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    padding: 0 22px;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.faq-item.active .answer {
+    max-height: 300px;
+    padding: 0 22px 22px 22px;
+}
+
+.question img {
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .question img {
+    transform: rotate(45deg);
+}
