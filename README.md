@@ -1,30 +1,28 @@
-# Netflix Clone
+## Netflix Clone
 
-A front-end clone of the Netflix landing page, built with plain HTML and CSS. Recreates the signature dark UI — hero banner, trending carousel, feature highlights, and an FAQ accordion.
+A responsive, Netflix-inspired landing page built with HTML, CSS, and vanilla JavaScript. The project recreates Netflix's dark visual style with a hero section, trending titles, feature highlights, and an interactive FAQ.
 
 ## Features
 
-- **Hero section** — full-width banner with sign-in nav, logo, and an email signup prompt ("Unlimited movies, TV shows, and more")
-- **Trending Now slider** — numbered movie cards (1–10) in a horizontally scrollable row
-- **"More reasons to join" section** — four feature cards covering multi-device streaming, offline downloads, cross-device viewing, and kids' profiles
-- **FAQ accordion** — expandable question cards with animated toggle
-- **Responsive layout** — adapts across breakpoints using CSS media queries
-- **Custom branding** — original "T" logo (red gradient SVG)
+- Hero section with navigation, branding, and an email sign-up prompt
+- Trending Now row with numbered movie cards in a horizontally scrollable layout
+- Feature highlights showcasing multi-device streaming, downloads, cross-device viewing, and kids' profiles
+- Interactive FAQ with expandable questions and animated toggles
+- Responsive design using CSS media queries
+- Custom branding with an original red-gradient SVG “T” logo
 
 ## Tech Stack
 
-- HTML5
-- CSS3 (Flexbox, absolute positioning, media queries, transitions)
-- Vanilla JavaScript (FAQ accordion toggle)
+- HTML5 — page structure
+- CSS3 — layout, responsive styling, and transitions
+- Vanilla JavaScript — FAQ accordion interaction
 
 ## Project Structure
 
-```
 Netflix-clone/
-├── assets/          # Logo, movie thumbnails, feature icons
-├── index.html       # Page markup
-└── style.css         # Styling
-```
+├── assets/       # Logo, movie thumbnails, and feature icons
+├── index.html    # Page markup
+└── style.css     # Styles and responsive layout
 
 ## Getting Started
 
@@ -41,6 +39,16 @@ Or serve it locally:
 cd Netflix-clone
 npx serve .
 ```
+
+
+Alternatively, serve the project locally:
+npx serve .
+Then open the local URL shown in your terminal.
+
+## Future Improvements
+- [ ] Connect trending titles to a movie API such as TMDB
+- [ ] Add more FAQ entries
+- [ ] Implement sign-in and sign-up flows
 
 ## Roadmap
 
